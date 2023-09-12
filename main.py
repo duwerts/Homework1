@@ -23,7 +23,6 @@ if __name__ == '__main__':
 
 
 def parse_cookie(query: str) -> dict:
-    # Используем регулярное выражение для разбора cookie-строки
     pattern = r'([^=;]+)=([^;]+);'
     print(pattern)
     cookies = re.findall(pattern, query)
